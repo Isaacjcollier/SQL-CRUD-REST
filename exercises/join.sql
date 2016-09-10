@@ -2,6 +2,7 @@
 
 SELECT first_name, last_name, teachers.id AS teacher_id, subject FROM teachers INNER JOIN classes ON teachers.id = classes.teacher_id;
 
+
 -- Modify the above query so that the first name and last name appear combined as a single column called "name" (HINT: Use CONCAT())
 
 SELECT CONCAT(first_name, ' ', last_name) AS name, teacher_id AS teacher_id, subject FROM teachers JOIN classes ON teachers.id = classes.teacher_id;
